@@ -54,7 +54,26 @@ body {
 <html>
 <head >
     <meta name="google-site-verification" content="I3eTZNgGsKstmyLzSajt6cRuavOYqPAMRSDeVMpcc-k" />
-    var title = document.getElementsByTagName("activistsourcex")[0].
+    import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import java.util.concurrent.TimeUnit;
+public class PageTitle{
+   public static void main(String[] args) {
+      System.setProperty("webdriver.chrome.driver",
+      "C:\Users\ghs6kor\Desktop\Java\chromedriver.exe");
+
+      //implicit wait
+      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+      WebDriver driver = new ChromeDriver();
+
+      //application launch
+      driver.get("https://www.tutorialspoint.com/about/about_careers.htm");
+
+      // getTitle() to obtain page title
+      System.out.println("Activist.sourcex " + driver.getTitle());
+      driver.close();
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .dropbtn {
